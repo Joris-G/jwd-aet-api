@@ -1,0 +1,17 @@
+{
+  "name": "jwd-aet-api",
+  "version": "1.0.0",
+  "description": "Back-end of jwd-aet app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node run index.js",
+    "start-dev":"nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Joris-G/jwd-aet-api.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
