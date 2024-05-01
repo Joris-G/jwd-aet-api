@@ -1,3 +1,7 @@
 const expressApp = require("./server/server");
 
-console.log(`everything is working !`);
+(async () => {
+  await expressApp();
+
+  console.log(`everything is working !`);
+})();

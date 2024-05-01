@@ -1,6 +1,16 @@
 const express = require("express");
+const router = require("./router/router");
+const serverConfig = require("./server.config.json");
+const PORT = serverConfig["dev-config"]["server-port"];
 
-const app = express();
+module.exports = async () => {
+  const app = express();
 
-console.log(`server express created !`);
-module.exports = app;
+  app.use("/api", router);
+
+  await app.listen(PORT, async () =>
+    console.log(`Server is running on port ${PORT}`)
+  );
+
+  return app;
+};
